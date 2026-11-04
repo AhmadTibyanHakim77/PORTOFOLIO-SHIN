@@ -1,0 +1,8 @@
+node_modules/
+.next/
+__MACOSX/
+.DS_Store
+tsconfig.tsbuildinfo
+.env
+.env.*
+!.env.example

@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night: #120d0a;
+  --color-ember: #a8321a;
+  --color-chakra: #ff6a2b;
+  --color-dune: #d9b778;
+  --color-sand: #f1e3c4;
+  --color-ash: #a89a85;
+  --font-display: var(--font-shippori), "Shippori Mincho", serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", ui-monospace, monospace;
+}
+
+/* ─── Base ─── */
+html { scroll-behavior: smooth; background: var(--color-night); color-scheme: dark; }
+body {
+  color: var(--color-sand);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--color-night); }
+::-webkit-scrollbar-thumb { background: rgba(255,106,43,0.3); border-radius: 100vw; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,106,43,0.6); }
+
+/* ─── Hero section: solid dark background, no bleed ─── */
+#prolog {
+  background: transparent; /* scene canvas is behind */
+}
+
+/* ─── All sections AFTER prolog: solid dark base so scene doesn't bleed through ─── */
+#path, #expertise, #jutsu, #missions, #github, #training, #contact {
+  position: relative;
+  background: rgba(18, 13, 10, 0.92);
+}
+#path::before, #expertise::before, #jutsu::before,
+#missions::before, #github::before, #training::before, #contact::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 13, 10, 0.92);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ─── Glass Card — solid-ish, opaque enough so 3D doesn't bleed ─── */
+.glass {
+  background: rgba(18, 13, 10, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(217, 183, 120, 0.18);
+  border-radius: 1.25rem;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.07) inset,
+    0 20px 60px -20px rgba(0,0,0,0.9);
+}
+
+/* ─── Focus ─── */
+:focus-visible { outline: 2px solid var(--color-chakra); outline-offset: 3px; border-radius: 4px; }
+::selection { background: rgba(255,106,43,0.3); color: var(--color-sand); }
+
+/* ─── Grain / halftone overlay (anime print feel) — very subtle ─── */
+.grain-overlay {
+  position: fixed; inset: 0; z-index: 60; pointer-events: none;
+  opacity: 0.032;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  mix-blend-mode: overlay;
+}
+
+/* ─── Vignette ─── */
+.vignette {
+  position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 35%, rgba(18,13,10,0.7) 100%);
+}
+
+/* ─── Speed Lines (radial, SVG) — fast scroll only ─── */
+.speed-lines {
+  position: fixed; inset: 0; z-index: 55; pointer-events: none;
+  opacity: 0; transition: opacity 0.1s;
+  background: repeating-conic-gradient(
+    from 0deg at 50% 50%,
+    rgba(217,183,120,0.05) 0deg 2deg,
+    transparent 2deg 12deg
+  );
+}
+.speed-lines.active { opacity: 1; }
+
+/* ─── Impact Frame ─── */
+.impact-frame {
+  position: fixed; inset: 0; z-index: 70; pointer-events: none;
+  opacity: 0; background: rgba(248,235,210,0.15);
+  mix-blend-mode: screen; transition: opacity 0.05s;
+}
+.impact-frame.flash { opacity: 1; }
+
+/* ─── Custom Cursor ─── */
+@media (pointer: fine) {
+  body { cursor: none; }
+  .cursor-dot {
+    position: fixed; z-index: 9999; pointer-events: none;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--color-chakra);
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 3px rgba(255,106,43,0.55);
+    transition: width 0.15s, height 0.15s;
+  }
+  .cursor-ring {
+    position: fixed; z-index: 9998; pointer-events: none;
+    width: 30px; height: 30px; border-radius: 50%;
+    border: 1.5px solid rgba(217,183,120,0.55);
+    transform: translate(-50%,-50%);
+    transition: width 0.2s, height 0.2s, border-color 0.2s;
+  }
+  .cursor-dot.hovering { width: 14px; height: 14px; }
+  .cursor-ring.hovering { width: 46px; height: 46px; border-color: rgba(255,106,43,0.75); }
+}
+
+/* ─── Sand trail canvas ─── */
+.sand-trail-canvas {
+  position: fixed; inset: 0; z-index: 54; pointer-events: none;
+}
+
+/* ─── Chapter ink wipe animation ─── */
+@keyframes inkWipe {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+.ink-wipe { animation: inkWipe 0.5s cubic-bezier(0.22,1,0.36,1) forwards; }
+
+/* ─── Shimmer ─── */
+@keyframes shimmer-move {
+  from { background-position: -200% 0; }
+  to   { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg,transparent,rgba(255,106,43,0.14) 50%,transparent);
+  background-size: 200% 100%;
+  animation: shimmer-move 2.2s ease-in-out infinite;
+}
+
+/* ─── Floating sigils ─── */
+@keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes spin-slow-rev { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+.sigil-cw  { animation: spin-slow 55s linear infinite; }
+.sigil-ccw { animation: spin-slow-rev 70s linear infinite; }
+
+/* ─── Reduced Motion — disable all effects ─── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .speed-lines, .impact-frame, .cursor-dot, .cursor-ring, .sand-trail-canvas {
+    display: none !important;
+  }
+}
+
+/* ─── Mobile adjustments ─── */
+@media (max-width: 767px) {
+  /* Hero text block takes full width on mobile */
+  #prolog .hero-text-block {
+    text-align: center;
+  }
+}
