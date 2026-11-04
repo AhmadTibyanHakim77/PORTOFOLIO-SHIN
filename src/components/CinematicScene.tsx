@@ -333,7 +333,7 @@ function SpiritBeast({ scrollRef, chapterRef }: BeastProps) {
   const breathRef = useRef(0);
   const warmGrad = useMemo(() => makeWarmGradient(), []);
   const beastGrad = useMemo(() => makeBeastGradient(), []);
-  _ = beastGrad; // used below
+  void beastGrad; // used below
 
   // Nine tails geometry
   const tailGeos = useMemo(() =>
