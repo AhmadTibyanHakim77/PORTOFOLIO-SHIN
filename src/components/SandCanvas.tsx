@@ -313,7 +313,8 @@ function GrainParticles({ count, scrollRef, burstRef, chapterRef }: GrainProps) 
 // Ember sparks (additive, tiny)
 // ─────────────────────────────────────────────────────────────────────────────
 function EmberSparks({ count }: { count: number }) {
-  const { size, dpr } = useThree();
+  const { size, gl } = useThree();
+  const dpr = gl.getPixelRatio();
   const uTime = useRef({ value: 0 });
   const uDpr = useRef({ value: dpr });
   const uViewH = useRef({ value: size.height });
@@ -362,7 +363,8 @@ function EmberSparks({ count }: { count: number }) {
 // Ground dust sweep
 // ─────────────────────────────────────────────────────────────────────────────
 function GroundDust({ count }: { count: number }) {
-  const { dpr } = useThree();
+  const { gl } = useThree();
+  const dpr = gl.getPixelRatio();
   const uTime = useRef({ value: 0 });
   const uDpr = useRef({ value: dpr });
   const positions = useMemo(() => {
