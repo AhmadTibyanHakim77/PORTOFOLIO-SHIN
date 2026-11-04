@@ -1,164 +1,137 @@
-# Ahmad Tibyan Hakim | Personal Portfolio
+# ✦ AHMAD TIBYAN HAKIM
 
-A modern, interactive personal portfolio showcasing my work and capabilities in **Full Stack Development, Data Analytics, and Data Science**.
+### Full Stack Developer · Data Analyst · AI & Machine Learning Enthusiast
 
 <p align="center">
   <a href="https://portofolio-shin-9vx4.vercel.app">
-    <strong>🌐 Visit Live Portfolio</strong>
+    <img src="https://img.shields.io/badge/VISIT%20PORTFOLIO-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Portfolio" />
   </a>
-  &nbsp; · &nbsp;
   <a href="https://github.com/AhmadTibyanHakim77">
-    <strong>GitHub Profile</strong>
+    <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
+</p>
+
+<p align="center">
+  <strong>Exploring technology. Building meaningful digital experiences.</strong>
 </p>
 
 ---
 
-## Overview
+## ◈ About The Project
 
-**Sand Shinobi Portfolio** is a personal portfolio website built to present my technical skills, selected projects, development experience, and professional interests.
+Welcome to my personal portfolio.
 
-The website combines a modern interface with interactive visual elements inspired by sand simulations. It provides visitors with an overview of my work across web development, artificial intelligence, machine learning, and data analytics.
+This website represents my journey in software development, data analytics, and artificial intelligence. I built it to showcase my selected projects, technical skills, and creative approach to solving problems through technology.
 
-The portfolio also includes a bilingual interface and GitHub activity integration to make project exploration more accessible.
+The experience combines a modern interface, interactive 3D visuals, smooth animations, and responsive layouts.
 
-## Live Preview
+**Live Website:** [portofolio-shin-9vx4.vercel.app](https://portofolio-shin-9vx4.vercel.app)
 
-🔗 **Website:** https://portofolio-shin-9vx4.vercel.app
+## ◈ Highlights
 
-## Key Features
+| Feature | Description |
+|:--|:--|
+| Interactive Experience | Immersive visual elements and interactive 3D scenes |
+| Modern Interface | Clean layouts, smooth transitions, and motion effects |
+| Responsive Design | Adaptable experience across desktop, tablet, and mobile |
+| Project Showcase | A curated collection of development and data projects |
+| Technical Skills | Overview of technologies, tools, and technical interests |
+| Bilingual Experience | Indonesian and English language support |
 
-- **Interactive 3D Experience**  
-  Dynamic sand particle visualization with cursor-based interaction and animated visual effects.
+## ◈ Tech Stack
 
-- **Bilingual Interface**  
-  Language switching between Indonesian and English.
+**Frontend & Frameworks**
 
-- **Professional Introduction**  
-  Personal profile, development focus, technical capabilities, and contact information.
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-- **Technical Skills Showcase**  
-  Organized overview of programming languages, frontend and backend technologies, databases, data analytics, and machine learning tools.
+**Animation & 3D**
 
-- **Project Portfolio**  
-  Curated projects with descriptions, technology stacks, repository links, and live demonstrations where available.
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=black)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
 
-- **Project Filtering**  
-  Explore projects by category, including Web Development, AI & Machine Learning, and Data Analytics.
+**Data Science & Machine Learning**
 
-- **GitHub Activity Integration**  
-  Displays public GitHub profile information, repository statistics, and programming language distribution.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 
-- **Responsive Interface**  
-  Designed to provide an accessible browsing experience across different screen sizes.
+**Tools & Deployment**
 
-- **Animation and Motion Effects**  
-  Smooth transitions and interactive animations to enhance the user experience.
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
-## Technology Stack
+## ◈ Featured Work
 
-### Frontend
-- Next.js 15
-- React 19
-- TypeScript
-- Tailwind CSS 4
-- Framer Motion
-- GSAP
-- Lucide React
+My portfolio covers several areas of technology:
 
-### 3D Graphics
-- Three.js
-- React Three Fiber
-- React Three Drei
+- **Web Development**  
+  Building responsive applications and modern web experiences.
 
-### Development Tools
-- Node.js
-- npm
-- ESLint
-- Git
-- GitHub
-- Vercel
+- **Data Analytics**  
+  Exploring datasets, identifying patterns, and communicating insights.
 
-## Featured Projects
+- **Machine Learning**  
+  Developing predictive models and experimenting with data-driven solutions.
 
-The portfolio showcases selected projects across several technical domains.
+- **Artificial Intelligence**  
+  Exploring practical AI applications and intelligent systems.
 
-| Project | Category | Technologies |
-|---|---|---|
-| StudyMate-AI | AI Assistant | Next.js, TypeScript, AI Integration |
-| Careerly AI | AI Career Platform | Next.js, TypeScript |
-| Tetra Coffee | Web Development | Next.js, Laravel |
-| Adult Income Prediction | Machine Learning | Python, Scikit-learn, Pandas |
-| Antrein | Queue Management | Next.js, TypeScript |
-| Tunas-Tabung | Web Application | Laravel, PHP, MySQL |
-| Obat Tani | Web Development | PHP, MySQL, JavaScript |
-| Stock Market Analysis | Data Analytics | Python, Pandas, Matplotlib |
-| Gold Price Forecasting | Predictive Analytics | Python, Pandas, Time Series |
+Visit the [live portfolio](https://portofolio-shin-9vx4.vercel.app) to explore the projects.
 
-Visit the live website to explore project descriptions, repositories, and available demonstrations.
+## ◈ Run Locally
 
-## Getting Started
+Want to explore or run this project on your machine?
 
-Follow these instructions to run the project locally.
-
-### Prerequisites
-
-Make sure you have installed:
-
-- Node.js
-- npm
-- Git
-
-### 1. Clone the Repository
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/AhmadTibyanHakim77/PORTOFOLIO-SHIN.git
 ```
 
-### 2. Navigate to the Project
+**2. Navigate to the project**
 
 ```bash
 cd PORTOFOLIO-SHIN
 ```
 
-### 3. Install Dependencies
+**3. Install dependencies**
 
 ```bash
 npm install
 ```
 
-### 4. Run the Development Server
+**4. Start the development server**
 
 ```bash
 npm run dev
 ```
 
-Open your browser and visit:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-```text
-http://localhost:3000
+**Production build**
+
+```bash
+npm run build
+npm run start
 ```
 
-## Available Scripts
-
-| Command | Description |
-|---|---|
-| `npm run dev` | Start the development server |
-| `npm run build` | Create an optimized production build |
-| `npm run start` | Start the production server |
-| `npm run lint` | Run ESLint and TypeScript checks |
-
-## Project Structure
+## ◈ Project Structure
 
 ```text
 PORTOFOLIO-SHIN/
 │
-├── public/
-│
+├── public/                 # Static assets
 ├── src/
-│   ├── app/
-│   ├── components/
-│   └── lib/
+│   ├── app/                # Application routes
+│   ├── components/         # Reusable UI components
+│   └── lib/                # Utilities and integrations
 │
 ├── .gitignore
 ├── eslint.config.mjs
@@ -166,39 +139,36 @@ PORTOFOLIO-SHIN/
 ├── package.json
 ├── package-lock.json
 ├── postcss.config.mjs
-├── tsconfig.json
-└── README.md
+└── tsconfig.json
 ```
 
-## Deployment
+## ◈ Deployment
 
-This project is deployed using **Vercel** and connected to the GitHub repository for continuous deployment.
+The portfolio is deployed on **Vercel** and connected to GitHub.
 
-Production website:
-
-https://portofolio-shin-9vx4.vercel.app
-
-## About Me
-
-**Ahmad Tibyan Hakim**  
-Full Stack Developer | Data Analyst | Data Science Enthusiast
-
-Based in Yogyakarta, Indonesia.
-
-I am interested in building scalable web applications, developing data-driven solutions, and exploring practical applications of artificial intelligence and machine learning.
-
-I continuously improve my technical skills through hands-on projects, experimentation, and software development practices.
-
-### Connect With Me
-
-- **Portfolio:** https://portofolio-shin-9vx4.vercel.app
-- **GitHub:** https://github.com/AhmadTibyanHakim77
-- **Email:** ahmadtibyanhakim09@gmail.com
-
----
+Every update pushed to the configured production branch can trigger a new deployment.
 
 <p align="center">
-  <strong>Designed and developed by Ahmad Tibyan Hakim</strong>
+  <a href="https://portofolio-shin-9vx4.vercel.app">
+    <img src="https://img.shields.io/badge/🚀_LIVE_PREVIEW-Visit_Website-000000?style=for-the-badge" alt="Live Preview" />
+  </a>
+</p>
+
+## ◈ Let's Connect
+
+I'm always interested in learning, collaborating, and building useful digital products.
+
+<p align="center">
+  <a href="https://github.com/AhmadTibyanHakim77">
+    <img src="https://img.shields.io/badge/GitHub-AhmadTibyanHakim77-181717?style=for-the-badge&logo=github" alt="GitHub Profile" />
+  </a>
+  <a href="https://portofolio-shin-9vx4.vercel.app">
+    <img src="https://img.shields.io/badge/Portfolio-Explore-000000?style=for-the-badge&logo=vercel" alt="Portfolio Website" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>Designed & Developed by <strong>Ahmad Tibyan Hakim</strong></sub>
   <br />
-  Building scalable digital products and transforming data into intelligent solutions.
+  <sub>© 2026 · All Rights Reserved</sub>
 </p>
